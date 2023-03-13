@@ -1,6 +1,5 @@
 ﻿// 4. Найдите произведение пар чисел в одномерном массиве. Парой считается первый и последний элемент, второй и последний и т.д. Резудьтат запишите в нвом массиве.
 
-
 void Print(int[] arr)
 {
     int size = arr.Length;
@@ -32,13 +31,19 @@ int[] PairsNum(int[] arr)
         new_arr[flex_size - 1] = arr[size / 2];
     return new_arr;
 }
+
+Console.WriteLine();
 int num = int.Parse(Console.ReadLine()!);
+Console.WriteLine();
 int start = int.Parse(Console.ReadLine()!);
+Console.WriteLine();
 int stop = int.Parse(Console.ReadLine()!);
+
 
 int[] arr = MassNums(num, start, stop);
 
 int[] new_arr = PairsNum(arr);
 Print(arr);
 Print(new_arr);
+
 
