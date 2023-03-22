@@ -13,3 +13,4 @@ for (int i = 0; i < arr.Length; i++)
 }
 
 Console.WriteLine($"Кол-во элементов > 0: {count}");
+
